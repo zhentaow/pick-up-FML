@@ -7,9 +7,9 @@ headers = {
 info_lists = []
 def judgment_sex(class_name):
     if class_name == 'womenIcon':
-        return '女'
+        return 'woman'
     else:
-        return '男'
+        return 'man'
 def get_info(url):
     res = requests.get(url)
     ids = re.findall('<h2>(.*?)</h2>',res.text,re.S)
